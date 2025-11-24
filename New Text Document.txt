@@ -1,0 +1,88 @@
+<section id="AI" class="section">
+    <div class="container">
+      <p class="eyebrow center">Your AI Guide</p>
+      <h2 class="center">Ask AI to plan Your Event</h2>
+      <p class="section-sub center">
+        All packages can be customized based on your city, guest count, and preferences.
+      </p>
+     <style>
+        /* --- CSS STYLES --- */
+
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* The Card Container */
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+            padding: 20px;
+            width: 90%; /* Take up most of the viewport width */
+            max-width: 600px; /* Limit the maximum width on large screens */
+        }
+
+        /* The Search Form Container */
+        .search-container {
+            display: flex; /* Use Flexbox to align input and button */
+            width: 100%; /* Important: Makes the container take the full width of the card padding */
+            gap: 10px; /* Space between input and button */
+        }
+
+        /* The Search Input Field */
+        .search-input {
+            flex-grow: 1; /* Allows the input field to take up all available space */
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            border-color: #007bff; /* Highlight border on focus */
+            outline: none; /* Remove default browser focus outline */
+        }
+
+        /* The Search Button */
+        .search-button {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>🔍 Search our library</h2>
+        <form class="search-container">
+            <input 
+                type="text" 
+                class="search-input" 
+                placeholder="Enter keywords..."
+                aria-label="Search field"
+            >
+            <button type="submit" class="search-button">Search</button>
+        </form>
+        <p style="margin-top: 20px; color: #666;">
+            Your search results will appear below.
+        </p>
+    </div>
+</section>
